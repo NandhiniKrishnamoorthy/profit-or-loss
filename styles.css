@@ -84,7 +84,7 @@ input {
     width: 100%;
     text-align: center;
     padding: 0.5rem;
-    font-size: x-large;
+    font-size: large;
     border-color: var(--black);
     border-width: medium;
     border-radius: 5px;
@@ -101,7 +101,7 @@ input {
 }
 
 .footer-background {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .footer-icon {
