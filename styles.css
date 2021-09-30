@@ -27,8 +27,8 @@ h3 {
 
 nav {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -60,10 +60,10 @@ input {
     border: transparent;
     font-size: large;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
-#check-birthdate {
+#calculate {
     background-color: var(--background-dark);
     border: 2px solid var(--black);
     color: var(--black);
