@@ -15,21 +15,27 @@ calculateButton.addEventListener("click", function calculate() {
 
 function calculateProfitLoss(ip, qty, cp) {
     if (ip && qty && cp) {
-        if (ip > cp) {
-            var loss = (ip - cp) * qty;
-            var lossPercentage = (loss / ip) * 100;
+        if (ip > 0 && qty > 0 && cp > 0) {
+            if (ip > cp) {
+                var loss = (ip - cp) * qty;
+                var lossPercentage = (loss / ip) * 100;
 
-            showMessage(`Hey, the loss is ${loss} and the percent is ${lossPercentage}%`);
-        }
-        else if (cp > ip) {
-            var profit = (cp - ip) * qty;
-            var profitPercentage = (profit / ip) * 100;
+                showMessage(`Hey, the loss is ${loss} and the percent is ${lossPercentage}%`);
+            }
+            else if (cp > ip) {
+                var profit = (cp - ip) * qty;
+                var profitPercentage = (profit / ip) * 100;
 
-            showMessage(`Hey, the profit is ${profit} and the percent is ${profitPercentage}%`);
+                showMessage(`Hey, the profit is ${profit} and the percent is ${profitPercentage}%`);
+            }
+            else {
+                showMessage(`No pain No gain`);
+            }
         }
         else {
-            showMessage(`No pain No gain`);
+            showMessage("Please enter positive values");
         }
+        
     }
     else {
         showMessage("Please enter values in fields");
